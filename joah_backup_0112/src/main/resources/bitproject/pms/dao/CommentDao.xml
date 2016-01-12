@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bitproject.pms.dao.CommentDao">
+
+  <resultMap type="comment" id="commentMap">
+    <id 		column="cno" 		property="cno"/>
+    <result column="cre_dt" property="createdTime"/>
+  </resultMap>
+
+  <select id="selectList" resultMap="commentMap" parameterType="int">
+    select 
+      id,
+      cno,
+      content,
+      cre_dt
+    from comment
+    where bno=#{no}
+    order by cre_dt desc
+  </select>
+  
+  
+  <insert id="insert" parameterType="comment">
+    insert into comment(id,bno,content, cre_dt) 
+    values(#{id},#{bno},#{content},now())
+  </insert>
+
+  
+  <delete id="delete" parameterType="map">
+    delete from comment 
+  	where cno=#{no} and id=#{id}
+  </delete>
+  <!--
+  <update id="update" parameterType="comment">
+    update comment set 
+      title=#{title},
+      content=#{content},
+      cre_dt=now(),
+  	  afile=#{attachFile}
+    where bno=#{no} and (pwd is null or pwd=#{password})
+  </update>
+    -->
+ <!--    
+  <select id="selectOne" resultMap="commentMap" parameterType="int">
+    select
+      lno,
+      name,
+      content,
+      cost,
+      photo
+    from comment
+    where lno=#{no}
+  </select>
+   -->
+</mapper>
+
+
+
+
+
+

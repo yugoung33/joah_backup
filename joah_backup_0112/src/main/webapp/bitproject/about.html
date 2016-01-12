@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Free CSS Templates | by CssTemplatesMarket.com</title>
+<!-- Cufon START  -->
+<script type="text/javascript" src="../lib/myjs/cufon-yui.js"></script>
+<script type="text/javascript" src="../lib/myjs/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('.logo', { fontFamily: 'GeosansLight' });
+Cufon.replace('h1', { fontFamily: 'GeosansLight' });
+Cufon.replace('h2', { fontFamily: 'GeosansLight' });
+Cufon.replace('.pages_banner', { fontFamily: 'GeosansLight' });
+Cufon.replace('fieldset', { fontFamily: 'GeosansLight' });
+</script>
+<!-- Cufon END  -->
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="../css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="../lib/mycss/style_search.css" />
+<script type="text/javascript" src="../lib/myjs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../lib/myjs/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript" src="../lib/myjs/modernizr.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../lib/mycss/styles.css"></link>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/lightbox.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+    <script type="text/javascript"
+      src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=553205575474122b3423699dc799445d"></script>
+</head>
+
+
+<!-- 맵 인포 윈도우 시작. -->
+<style>
+.wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+    .wrap * {padding: 0;margin: 0;}
+    .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+    .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+    .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+    .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+    .info .close:hover {cursor: pointer;}
+    .info .body {position: relative;overflow: hidden;}
+    .info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
+    .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+    .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+    .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+</style>
+
+<!-- 맵 인포 윈도우 끝-->
+<body>
+   <div id="main_container">
+
+       <!--//////////////////////////////////////////////////////////////////////////////////// -->
+       <!--                                     Header                                          -->
+       <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+              <!-- header -->
+<header id="h_title"></header>
+
+<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+<script>
+$.ajax({
+    url : "header.html",
+    dataType : "html",
+    type : "get",  // post 또는 get
+    success : function(result){
+        $("#h_title").html(result);
+    }
+});
+</script>
+       <!--//////////////////////////////////////////////////////////////////////////////////// -->
+       <!--                                    end Header                                       -->
+       <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+
+        <!--//////////////////////////////////////////////////////////////////////////////////// -->
+       <!--                                    menu                                             -->
+       <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////// -->
+      <!--         center_content_pages = pages_banner + left_content + right_content          -->
+      <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div class="center_content_pages">
+         <div class="pages_banner">Contact Date Course. delecious food,
+            watching, health, etc...</div>
+
+            <!--//////////////////////////////////////////////////////////////////////////////////// -->
+         <!--                           left contnt = Search Option                               -->
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+         <div class="left_content">
+            <div>
+               <fieldset>
+                  <legend>Search Option</legend>
+
+                  <div class="left_menu">
+                     <div class="form_row">
+                        <label style="font-size: 20px; margin-top: -5px;">start:</label>
+                        <input type="text" class="form_input" name="" />
+                     </div>
+                     <div class="form_row">
+                        <label style="font-size: 20px; margin-top: -5px;">end:</label> <input
+                           type="text" class="form_input" name="" />
+                     </div>
+                     <div class="form_row">
+                        <label style="font-size: 20px; margin-top: -5px;">cost:</label>
+                        <input type="text" class="form_input" name="" />
+                     </div>
+                     <div class="form_row">
+                        <label style="font-size: 20px; margin-top: -15px;">age
+                           group:</label> <input type="text" class="form_input" name="" />
+                     </div>
+                     <div class="form_row">
+                        <input type="button" class="form_search" value="Search" />
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+           </div>
+
+            <!--//////////////////////////////////////////////////////////////////////////////////// -->
+         <!--                       end left contnt = Search Optopn                               -->
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+         <!-- right contnt = menubar(img, food, watching button + search bar) + img + save button -->
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+         <div class="right_content">
+             <div class="menu_bar">
+               <img src="18415.png"
+                  class="map_pic" height="30" width="30" /> <input type="button"
+                  class="form_mapSearch" value=" food " /> <input type="button"
+                  class="form_mapSear" value=" watching " /> <input type="button"
+                  class="form_mapSear" value=" exercize " /> <input type="button"
+                  class="form_mapSear" value=" etc " />
+               <nav class="search_border"> <input type="text"
+                  class="search_text" placeholder="search" />
+               <button type="submit" class="search_but">Go</button>
+               </nav>
+            </div>
+            <div id="testMap" style="width: 680px; height: 400px; margin: 0;"></div>
+         </div>
+
+            <!--//////////////////////////////////////////////////////////////////////////////////// -->
+         <!--                          end right content                                          -->
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+         <div class="clear"></div>
+      </div>
+
+        <!--//////////////////////////////////////////////////////////////////////////////////// -->
+      <!--                            end center_content_pages =                               -->
+      <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- 테스트용 데이터 -->
+        <p id="mapLatLng"></p>
+        <p id="distance"></p>
+        <!-- 테스트 끝 -->
+
+      <div class="footer">
+         <div class="copyrights">
+            Free CSS Template by <a href="http://csstemplatesmarket.com"
+               target="_blank">Css templates market</a>
+         </div>
+         <div class="footer_right">
+            <a href="#">Home</a> <a href="#">About Us</a> <a href="#">Privacy
+               Policy</a> <a href="#">Contact Us</a>
+         </div>
+         <div class="clear"></div>
+      </div>
+
+   </div>
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+         <!--  -->
+         <!--//////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+ <script type="text/javascript">
+ var oPoint = new nhn.api.map.LatLng(37.5010226, 127.0396037);                       
+ var oCenterPoint = new nhn.api.map.LatLng(37.5010226, 127.0396037);
+                        nhn.api.map.setDefaultPoint('LatLng');
+                        oMap = new nhn.api.map.Map('testMap', {
+                            point : oPoint, // 여기에다 현재 위치를 추가하면 됨.
+                            zoom : 10,
+                            enableWheelZoom : true,
+                            enableDragPan : true,
+                            enableDblClickZoom : true,
+                            mapMode : 0, // 맵 모드 0:기본 1:위성 2:기본+위성
+                            activateTrafficMap : false,
+                            activateBicycleMap : false,
+                            minMaxLevel : [ 1, 14 ],
+                            size : new nhn.api.map.Size(680, 400)
+                          // 지도 크기.
+                          });
+
+                          var mapZoom = new nhn.api.map.ZoomControl(); // - 줌 컨트롤 선언
+                          oMap.addControl(mapZoom); // - 줌 컨트롤 추가.
+                          mapZoom.setPosition({
+                            left : 623,
+                            bottom : 20
+                          }); // - 줌 컨트롤 위치 지정.
+
+                          // 아이콘설정
+                          var oSize = new nhn.api.map.Size(20, 21);
+                          var oOffset = new nhn.api.map.Size(14, 37);
+                          var oIcon = new nhn.api.map.Icon('1.png', oSize, oOffset); // 지도에 표시될 아이콘
+
+                          var mapInfoTestWindow = new nhn.api.map.InfoWindow(); // - info window 생성
+                          mapInfoTestWindow.setVisible(false); // - infowindow 표시 여부 지정.
+                          oMap.addOverlay(mapInfoTestWindow); // - 지도에 추가.
+
+                          var oLabel = new nhn.api.map.MarkerLabel(); // - 마커 라벨 선언.
+                          oMap.addOverlay(oLabel); // - 마커 라벨 지도에 추가. 기본은 라벨이 보이지 않는 상태로 추가됨.
+
+                          mapInfoTestWindow.attach('changeVisible', function(oCustomEvent) {
+                            if (oCustomEvent.visible) {
+                              oLabel.setVisible(false);
+                            }
+                          });
+
+                          function closeOverlay() {
+                            mapInfoTestWindow.setVisible(false);
+                          }
+                          
+                          $.getJSON('ajax/location.do', function(resultObj) {
+                              for(var location of resultObj.data) {
+                          oMap.attach('click', function(oCustomEvent) {
+                              var oPoint =  oCustomEvent.point;
+                              var oTarget = oCustomEvent.target;
+                              if (oCustomEvent.clickCoveredMarker) {
+                                return;
+                              }
+                              mapInfoTestWindow.setContent('<div class="wrap">' +
+                                        '    <div class="info">' +
+                                        '        <div class="title">'+ location.name  +
+                                        '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' +
+                                        '        </div>' +
+                                        '        <div class="body">' +
+                                        '            <div class="img">' +
+                                        '                <img src="'+ location.photo +'" width="73" height="70">' +
+                                        '           </div>' +
+                                        '            <div class="desc">' +
+                                        '                <div class="ellipsis">'+ location.content  + '여기다가 상세정보' +
+                                        '                <div class="jibun ellipsis">(우) 63309 (지번) ?? 2181</div>' +
+                                        '                <div><a href="#" target="_blank" class="link">홈페이지</a></div>' +
+                                        '            </div>' +
+                                        '        </div>' +
+                                        '    </div>' +
+                                        '</div>');
+                               mapInfoTestWindow.setPoint(oTarget.getPoint());
+                               mapInfoTestWindow.setVisible(true);
+                               mapInfoTestWindow.setPosition({right : 15, top : 30});
+                               mapInfoTestWindow.autoPosition();
+                               return;
+                                
+                              });
+                            }
+                          });
+                          
+                          oMap.attach('mouseenter', function(oCustomEvent) {
+                            var oTarget = oCustomEvent.target;
+                            // 마커위에 마우스 올라간거면
+                            if (oTarget instanceof nhn.api.map.Marker) {
+                              var oMarker = oTarget;
+                              oLabel.setVisible(true, oMarker); // - 특정 마커를 지정하여 해당 마커의 title을 보여준다.
+                            }
+                          });
+
+                          oMap.attach('mouseleave', function(oCustomEvent) {
+                            var oTarget = oCustomEvent.target;
+                            // 마커위에서 마우스 나간거면
+                            if (oTarget instanceof nhn.api.map.Marker) {
+                              oLabel.setVisible(false);
+                            }
+                          }); 
+                          
+                          var oMarkers = [];
+                          $.getJSON('ajax/location.do', function(resultObj) {
+                            for (var location of resultObj.data) {
+                              oMarkers[location.no] = new nhn.api.map.Marker(oIcon, {
+                              title : location.name
+                            });
+                          oMarkers[location.no].setPoint(new nhn.api.map.LatLng(location.lng, location.lat))
+                          oMap.addOverlay(oMarkers[location.no]);
+                            } 
+                          });
+                          
+                          
+                          var circle = new nhn.api.map.Circle({
+                            strokeColor : "blue",
+                            strokeOpacity : 0.5,
+                            strokeWidth : 2,
+                            fillColor : "blue",
+                            fillOpacity : 0.1
+                          });
+
+                          var radius = 200; // - radius의 단위는 meter
+
+                          /* var mapxy = document.getElementById('mapLatLng');
+                          var dist = document.getElementById('distance'); */
+                          oMap.getCenter(); //TODO
+                          circle.setRadius(radius); // - circle 의 반지름을 지정하며 단위는 meter이다.
+                          //circle.setStyle("strokeColor", "black"); // - 선의 색깔을 지정함.
+                          //circle.setStyle("strokeWidth", 3); // - 선의 두께를 지정함.
+                          //circle.setStyle("strokeOpacity", 1); // - 선의 투명도를 지정함.
+                          //circle.setStyle("fillColor", "none"); // - 채우기 색상. none 이면 투명하게 된다.
+                          circle.setCenterPoint(oMap.getCenter()); // - circle 의 중심점을 지정한다.
+                          oMap.addOverlay(circle);
+                          oMap.attach('mousemove',function(oCustomEvent) { //마우스 움직일때마다 이벤트 발생.
+                                    $.getJSON('ajax/location.do', function(resultObj) {
+                                      for(var location of resultObj.data) {
+                                      if (oMap.getCenter().getDistanceFrom(oMarkers[location.no].getPoint()) < 200) {
+                                            oMarkers[location.no].setVisible(true);
+                                          } else
+                                          oMarkers[location.no].setVisible(false);
+                                        }
+                                    circle.setCenterPoint(oMap.getCenter());
+                                  })
+                          });
+                        </script>
+   <script type="text/javascript">
+                        try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+   </script>
+   
+   
+   
+    <!------------------------------------------>
+<!--            Modal 시작                -->
+<!------------------------------------------>
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+         <ul class="cd-switcher">
+            <li><a href="#0">Sign in</a></li>
+            <li><a href="#0">New account</a></li>
+         </ul>
+
+         <div id="cd-login"> <!-- log in form -->
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-password" for="signin-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                  <a href="#0" class="hide-password">Hide</a>
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input type="checkbox" id="remember-me" checked>
+                  <label for="remember-me">Remember me</label>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width" type="submit" value="Login">
+               </p>
+            </form>
+            
+            <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+             <a href="#0" class="cd-close-form">Close</a> 
+         </div> <!-- cd-login -->
+
+         <div id="cd-signup"> <!-- sign up form -->
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-username" for="signup-username">Username</label>
+                  <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-password" for="signup-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                  <a href="#0" class="hide-password">Hide</a>
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input type="checkbox" id="accept-terms">
+                  <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Create account">
+               </p>
+            </form>
+
+             <a href="#0" class="cd-close-form">Close</a> 
+         </div> <!-- cd-signup -->
+
+         <div id="cd-reset-password"> <!-- reset password form -->
+            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Reset password">
+               </p>
+            </form>
+
+            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+         </div> <!-- cd-reset-password -->
+         <a href="#0" class="cd-close-form">Close</a>
+      </div> <!-- cd-user-modal-container -->
+   </div> <!-- cd-user-modal -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="../lib/myjs/main.js"></script> 
+
+<!------------------------------------------>
+<!--            Modal 끝                  -->
+<!------------------------------------------>
+</body>
+
+</html>

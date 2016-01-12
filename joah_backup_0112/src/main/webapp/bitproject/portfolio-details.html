@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Hot place</title>
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="../css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="../lib/mycss/style_detail.css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+<script type="text/javascript" src="../lib/myjs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../lib/myjs/jquery-1.3.2.min.js"></script>
+<!-- Cufon START  -->
+<script type="text/javascript" src="../lib/myjs/cufon-yui.js"></script>
+<script type="text/javascript"
+  src="../lib/myjs/GeosansLight_500.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('.logo', { fontFamily: 'GeosansLight' });
+Cufon.replace('h1', { fontFamily: 'GeosansLight' });
+Cufon.replace('h2', { fontFamily: 'GeosansLight' });
+Cufon.replace('.pages_banner', { fontFamily: 'GeosansLight' });
+Cufon.replace('fieldset', { fontFamily: 'GeosansLight' });
+</script>
+<script type="text/javascript" src="../lib/myjs/modernizr.js"></script>
+<!-- Cufon END  -->
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/lightbox.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+    
+</head>
+<body>
+<div id="main_container">
+      
+      
+        <!-- header -->
+<header id="h_title"></header>
+
+<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+<script>
+$.ajax({
+    url : "header.html",
+    dataType : "html",
+    type : "get",  // post 또는 get
+    success : function(result){
+        $("#h_title").html(result);
+    }
+});
+</script>
+
+        <div class="center_content_pages">
+          <div class="pages_banner">DETAIL</div>
+        </div>
+
+
+  <section id="portfolio">
+
+      <div class="right_content">
+             <div class="menu_bar">
+               <img src="18415.png"
+                  class="map_pic" height="30" width="30" /> <input type="button"
+                  class="form_mapSearch" value=" food " /> <input type="button"
+                  class="form_mapSear" value=" watching " /> <input type="button"
+                  class="form_mapSear" value=" exercize " /> <input type="button"
+                  class="form_mapSear" value=" etc " />
+               <nav class="search_border"> <input type="text"
+                  class="search_text" placeholder="search" />
+               <button type="submit" class="search_but">Go</button>
+               </nav>
+            </div>
+            <div id="testMap" style="width: 780px; height: 400px; margin: 0;"></div>
+         </div>
+
+      <div class="col-md-3 col-sm-5 left_content">
+        <div class="sidebar blog-sidebar">
+          <div class="sidebar-item categories">
+            <h3>Categories</h3>
+            <ul class="nav navbar-stacked">
+              <li><a href="#">Lorem ipsum<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+              <li class="active"><a href="#">Dolor sit amet<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+              <li><a href="#">Adipisicing elit<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+              <li><a href="#">Sed do<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+              <li><a href="#">Eiusmod<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+              <li><a href="#">Mockup<span class="pull-right"></span></a></li>
+              <li><input type="text"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    
+    <!-- 밑줄 한줄 -->
+    <div>
+      <hr style="position:relative; width:90%; border-top: 2px solid lightgray;">
+    </div>
+    <!-- 밑줄 한줄 끝 -->
+    
+    <section>
+      <div class="row pictures_div">
+                <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms" id="photo_div">
+<!-- 사진 ajax 들어감 -->
+                </div>
+                <div class="col-sm-6 wow fadeInDown row" data-wow-duration="1000ms" data-wow-delay="0ms">
+                    <h2>PHOTO</h2>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="900ms" data-wow-delay="100ms">
+                        <img src="images/portfolio/1.jpg"></div>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="800ms" data-wow-delay="200ms">
+                        <img src="images/portfolio/2.jpg"></div>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <img src="images/portfolio/3.jpg"></div>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="600ms" data-wow-delay="100ms">
+                        <img src="images/portfolio/4.jpg"></div>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="500ms" data-wow-delay="200ms">
+                        <img src="images/portfolio/5.jpg"></div>
+                        <div style="border:1px solid gray" class="wow fadeInUp col-sm-4" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <img src="images/portfolio/6.jpg"></div>
+                    
+                </div>
+            </div>
+    </section>
+    <div>
+      <hr style="position:relative; width:90%; border-top: 2px solid lightgray;">
+    </div>
+
+    <section>
+      <div class="post-content overflow">
+        <h2 class="post-title bold">
+          <a href="#" id ="data_title"></a>
+        </h2>
+        <h3 class="post-author">
+          <a href="#">Posted by micron News</a>
+        </h3>
+        <p id="content">
+        </p>
+        <div class="post-bottom overflow">
+          <ul class="nav navbar-nav post-nav">
+            <li><a href="#"><i class="fa fa-tag"></i>Creative</a></li>
+            <li><a href="#"><i class="fa fa-heart"></i>32 Love</a></li>
+            <li><a href="#"><i class="fa fa-comments"></i>3 Comments</a></li>
+          </ul>
+        </div>
+        <div class="blog-share">
+          <span class='st_facebook_hcount'></span> <span
+            class='st_twitter_hcount'></span> <span class='st_linkedin_hcount'></span>
+          <span class='st_pinterest_hcount'></span> <span
+            class='st_email_hcount'></span>
+        </div>
+        <div class="author-profile padding">
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="images/blogdetails/1.png" alt="">
+            </div>
+            <div class="col-sm-10">
+              <h3>Rodrix Hasel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliq
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi</p>
+              <span>Website:<a href="www.jooomshaper.com">
+                  www.jooomshaper.com</a></span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="response-area">
+          <h2 class="bold">Comments</h2>
+
+          <form method="post" action="#" data-ajax="true">
+            <div class="row">
+              <div class="col-sm-2">
+                <img class="img-circle" src="1.png" width="127" height="137"
+                  alt="">
+              </div>
+              <div class="col-sm-1"> <p>일단 무조건 a001이 댓글다는 걸로 했음.</p> </div>
+
+              <div class="col-sm-9">
+                <dl class="comment_form_content">
+                  <dt>댓글 본문</dt>
+                  <dd>
+                    <div id="reply_indicator">
+                      <input type="hidden" name="parent" value="">
+                    </div>
+                    <textarea id="com-content" class="form-control" rows="3" name="cmt_content" placeholder="댓글 달리는 영역"></textarea>
+                  </dd>
+                </dl>
+                <div class="buttons" style="float:right;">
+                  <input type="hidden" name="course_id" value="45"> <input
+                    type="hidden" name="module_id" value="0"> <input
+                    type="hidden" name="topic_id" value="0">
+
+                  <button type="button" id="comment-add-btn" class="btn btn-success">
+                    <span>댓글 올리기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- 댓글 DB 연동  -->
+          <ul id="commentList" class="media-list wow fadeInDown" >
+          
+          </ul>
+      </div>
+      </div>
+      </section>
+    </div>
+    
+<script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+  <script>
+ var no = location.href.split('?')[1].split('=')[1];
+ 
+ 
+ 
+ $.getJSON('ajax/detail.do?no=' + no, function(resultObj) {
+    var ajaxResult = resultObj.ajaxResult;
+    if (ajaxResult.status == "success") {
+      var board = ajaxResult.data;
+      $("#photo_div").html("<img src='images/portfolio/"+ board.photo +"' class='img-responsive' alt=''>")
+      $("#data_title").text(board.title);
+      $("#content").text(board.content);
+    }
+ });
+ 
+ $.getJSON('ajax/comment.do?no=' + no, function(resultObj) {
+       var com = $("#commentList");
+       var count = 100;
+      for (var comment of resultObj.data) {
+        $('<li class="media">')
+        .html('<div class="post-comment wow fadeInDown" data-wow-duration="'+count+'ms" data-wow-delay="800ms">' +
+        '<a class="pull-left" href="#"> <img class="media-object"' +
+        'src="'+ comment.photo +'" alt="">' +
+        '</a>' +
+        '<div class="media-body">' +
+        '<span><i class="fa fa-user"></i>Posted by <a href="#">'+ comment.id +'</a></span>' +
+        '          <p>'+ comment.content +'</p>' +
+        '          <ul class="nav navbar-nav post-nav">' +
+         '           <li><a href="#"><i class="fa fa-clock-o"></i>'+ comment.createdTime +'</a></li>' +
+        '            <li><div class="deletecomment" id="comment' + comment.cno + '"><i class="fa fa-reply"></i>삭제</div></li>' +
+      '            </ul>' +
+       '         </div>' +
+       '       </div></li>').appendTo(com);
+        count += 100;
+        $("#comment" + comment.cno).click(function(event) {
+               console.log($(this).attr("id").split('comment')[1]);
+               $.postJSON('ajax/deletecomment.do?no='+ $(this).attr("id").split('comment')[1], function(resultObj) {
+                   console.log($('#comment-no').val('value'));
+                        var ajaxResult = resultObj.ajaxResult;
+                       if (ajaxResult.status == "success") {
+                          alert("삭제 성공")
+                       } else {
+                       alert("게시물 삭제에 실패했습니다.");
+                      }
+               });
+            });
+      }
+   });
+
+ $("#comment-add-btn").click(function(event) {
+   $.post('ajax/addcomment.do', {
+        id: 'a001',
+        bno: no,
+        content: $('#com-content').val(),
+        success:function(data) {
+          
+        }
+      }, function(resultObj) {
+        var ajaxResult = resultObj.ajaxResult;
+        if (ajaxResult.status == "success") {
+          /* 여기서 바로 페이지 리프레쉬 해서 다시 나오게 하기 */
+        } 
+      }, 'json');
+    });
+ 
+ $(".deletecomment").click(function(event) {
+   console.log("버튼 눌렀을 때 반응");
+   /* $.postJSON('ajax/deletecomment.do?no=', function(resultObj) {
+     console.log($('#comment-no').val('value'));
+          var ajaxResult = resultObj.ajaxResult;
+          if (ajaxResult.status == "success") {
+              alert("삭제 성공")
+            } else {
+            alert("게시물 삭제에 실패했습니다.");
+          }
+    }); */
+ });
+ 
+  </script>
+
+
+
+
+  <!------------------------------------------>
+<!--            Modal 시작                -->
+<!------------------------------------------>
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+         <ul class="cd-switcher">
+            <li><a href="#0">Sign in</a></li>
+            <li><a href="#0">New account</a></li>
+         </ul>
+
+         <div id="cd-login"> <!-- log in form -->
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-password" for="signin-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                  <a href="#0" class="hide-password">Hide</a>
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input type="checkbox" id="remember-me" checked>
+                  <label for="remember-me">Remember me</label>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width" type="submit" value="Login">
+               </p>
+            </form>
+            
+            <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+             <a href="#0" class="cd-close-form">Close</a> 
+         </div> <!-- cd-login -->
+
+         <div id="cd-signup"> <!-- sign up form -->
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-username" for="signup-username">Username</label>
+                  <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <label class="image-replace cd-password" for="signup-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                  <a href="#0" class="hide-password">Hide</a>
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input type="checkbox" id="accept-terms">
+                  <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Create account">
+               </p>
+            </form>
+
+             <a href="#0" class="cd-close-form">Close</a> 
+         </div> <!-- cd-signup -->
+
+         <div id="cd-reset-password"> <!-- reset password form -->
+            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+            <form class="cd-form">
+               <p class="fieldset">
+                  <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                  <span class="cd-error-message">Error message here!</span>
+               </p>
+
+               <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Reset password">
+               </p>
+            </form>
+
+            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+         </div> <!-- cd-reset-password -->
+         <a href="#0" class="cd-close-form">Close</a>
+      </div> <!-- cd-user-modal-container -->
+   </div> <!-- cd-user-modal -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="../lib/myjs/main.js"></script> 
+
+<!------------------------------------------>
+<!--            Modal 끝                  -->
+<!------------------------------------------>
+</body>
+</html>
